@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
+import uuid  # tambahkan baris ini di paling atas
 
 class MoodEntry(models.Model):
     mood = models.CharField(max_length=255)
@@ -12,3 +12,4 @@ class MoodEntry(models.Model):
     @property
     def is_mood_strong(self):
         return self.mood_intensity > 5
+    

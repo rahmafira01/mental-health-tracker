@@ -12,6 +12,8 @@ from django.contrib.auth.decorators import login_required
 import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.shortcuts import reverse
+from django.http import HttpResponseRedirect
 
 @login_required(login_url='/login')
 # Create your views here.
